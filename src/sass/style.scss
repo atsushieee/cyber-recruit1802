@@ -1,0 +1,457 @@
+/*
+* 共通要素
+*/
+// ボタン
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+  font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+header {
+  background-color: #000000;
+  height: 74px;
+  position: relative;
+  img {
+    display: block;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1280px;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp, .br-sp {
+  display: none !important;
+}
+
+.bottom-margin {
+  padding-bottom: 115px;
+}
+
+.top-margin {
+  padding-top: 115px;
+}
+
+#concept-area, #flow-area, #people-area, #special-area {
+  background-color: #000000;
+}
+
+.one-column h2 {
+  margin-bottom: 75px;
+  img {
+    display: block;
+    height: 83px;
+    margin: auto;
+    width: 243px;
+  }
+}
+
+.two-column {
+  text-align: center;
+  width: 50%;
+}
+
+.two-column h2 {
+  margin-bottom: 50px;
+  .normal-title {
+    margin: auto;
+    max-width: 243px;
+    width: 45%;
+  }
+  .long-title {
+    margin: auto;
+    max-width: 405px;
+    width: 75%;
+  }
+}
+
+.inner-contents {
+  margin: 0 auto;
+  max-width: 1080px;
+  overflow: hidden;
+  width: 85%;
+}
+
+.one-column .contents-detail {
+  text-align: center;
+}
+
+
+#key-visual {
+  background-image: url('../images/key_visual_pc.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 230px 0 40px 95px;
+}
+
+#key-visual a {
+  margin-left: 100px;
+}
+
+#key-visual a img {
+  height: auto;
+  width: 256px;
+}
+
+
+#concept-area img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 680px;
+  width: 53%;
+}
+
+
+#about-area {
+  background-image: url('../images/second_visual_pc.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-copy {
+  font-size: 38px;
+}
+
+.sub-text {
+  margin: 30px auto 50px;
+  line-height: 3.58em;
+}
+
+.contents-detail ul {
+  li:first-child {
+    margin-right: 10px;
+  }
+}
+
+.rounded-rectangle {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: solid 5px #000000;
+  border-radius: 15px;
+  display: inline-block;
+  height: 187px;
+  width: 187px;
+  margin: 0 auto;
+  position: relative;
+  .item-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 187px;
+  }
+  .comments {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 2em;
+  }
+}
+
+
+#flow-area, #other-area {
+  .contents-detail {
+    margin: 0 auto;
+    width: 65%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+#other-area {
+  background-image: url('../images/third_visual_pc.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  .target-copy {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+  .sub-text {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+  .jobs-copy {
+    font-size: 30px;
+    line-height: 1.8em;
+  }
+}
+
+.two-column {
+  float: left;
+  margin-top: 70px;
+}
+
+
+#people-area .contents-detail {
+  color: #ffffff;
+  font-size: 25px;
+  .jobs {
+    font-size: 16px;
+  }
+  li {
+    display: inline-block;
+    height: 250px;
+    margin: 0 12px 90px;
+    vertical-align: top;
+    width: 182px;
+    img {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}
+
+
+#special-area {
+  padding: 50px 0 75px;
+  img {
+    display: block;
+    margin: auto;
+    max-width: 213px;
+    width: 32%;
+  }
+}
+
+
+#contact-area {
+  background-color: #323333;
+  color: #ffffff;
+  padding: 75px 0;
+  text-align: center;
+  .main-copy {
+    font-size: 22px;
+  }
+  .sub-text {
+    line-height: 2.5em;
+    margin-bottom: 0;
+  }
+}
+
+
+@media(max-width:640px){
+  body {
+    font-size: 11px;
+  }
+
+  .top-margin {
+    padding-top: 35px;
+  }
+
+  .bottom-margin {
+    padding-bottom: 35px;
+  }
+
+  .one-column h2 {
+    margin-bottom: 35px;
+    img {
+      height: auto;
+      max-width: 243px;
+      width: 38%;
+    }
+  }
+
+  header {
+    height: 52px;
+  }
+
+  header img {
+    width: 122px;
+  }
+
+  .pc {
+    display: none !important;
+  }
+
+  .sp, .br-sp {
+    display: block !important;
+  }
+
+
+  #key-visual {
+    background-image: url('../images/key_visual_sp.jpg');
+    background-size: 100% auto;
+  }
+
+  h1 {
+    padding: 225px 0 30px;
+  }
+
+  h1 img {
+    height: auto;
+    margin: auto;
+    width: 86%
+  }
+
+  .center-btn {
+    text-align: center;
+  }
+
+  #key-visual a {
+    margin: 0;
+  }
+
+  #key-visual a img {
+    height: auto;
+    width: 55%;
+  }
+
+  #concept-area img {
+    max-width: 490px;
+    width: 76%;
+  }
+
+  #about-area {
+    background-image: url('../images/second_visual_sp.jpg');
+    background-size: 100% auto;
+  }
+
+  .main-copy {
+    font-size: 22px;
+  }
+
+  .sub-text {
+    margin: 20px auto 35px;
+    line-height: 3.58em;
+  }
+
+  .rounded-rectangle {
+    border: solid 3px #000000;
+    height: 25vw;
+    width: 30%;
+    .item-text {
+      font-size: 16px;
+      line-height: 1.2em;
+      width: 100%;
+    }
+    .comments {
+      font-size: 10px;
+      margin-top: 10px;
+      line-height: 2em;
+    }
+  }
+
+
+  #other-area {
+    background-image: url('../images/third_visual_sp.jpg');
+    background-size: 100% auto;
+    .contents-detail {
+      width: 86%;
+    }
+    .target-copy {
+      font-size: 20px;
+      line-height: 1.5em;
+    }
+    .sub-text {
+      font-size: 12px;
+      line-height: 1.4em;
+    }
+    .jobs-copy {
+      font-size: 20px;
+      line-height: 1.8em;
+    }
+  }
+
+  .two-column {
+    float: none;
+    width: 100%;
+    h2 {
+      margin-bottom: 35px;
+    }
+  }
+
+  #people-area .contents-detail {
+    font-size: 12px;
+    .jobs {
+      font-size: 8px;
+    }
+    li {
+      height: 110px;
+      margin: 0 8px 30px;
+      width: 82px;
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  #contact-area {
+    padding: 40px 0;
+  }
+}

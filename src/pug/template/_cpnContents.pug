@@ -1,0 +1,259 @@
+#wrapperSecond.fadeinBefore
+  if forDevice == "PC"
+    include /template/_navigation
+    +navigation("headerNav","ノアールのおいしさの秘密", "index_noir_secret.html", "true")
+  h2
+    img(src="assets/images/surprise_kv.jpg" alt="みんなの驚き#驚きノアール")
+  #selectedTw
+    if forDevice == "PC"
+      #tweets
+        ul
+          if twcolumn == 2
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E9%A9%9A%E3%81%8D%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB%20-%23%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB%20-%23noir%20-%23Noir%20-%23NOIR%20filter%3Aimages%20%20exclude%3Aretweets" width="445px" data-tweet-limit="5" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="935422523746820096"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E9%A9%9A%E3%81%8D%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB%20%23%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB%20OR%20%23noir%20OR%20%23Noir%20OR%20%23NOIR%20filter%3Aimages%20%20exclude%3Aretweets" width="445px" data-tweet-limit="5" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="935018508479471616"></a>
+          if twcolumn == 4
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%B3%20filter%3Aimages%20%20exclude%3Aretweets" width="217px" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931485529131982848"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%B3%20-filter%3Aimages%20%20exclude%3Aretweet" width="217px" data-tweet-limit="20" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931592630483300352"></a>
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%81%E3%83%83%E3%83%97%E3%82%B9%E3%82%BF%E3%83%BC%20filter%3Aimages%20%20exclude%3Aretweets" width="217px" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931534519059939328"></a> 
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%A4%E3%83%9E%E3%82%B6%E3%82%AD%E3%83%93%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88%20exclude%3Aretweets%20filter%3Aimages" width="217px" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931594558223278080"></a>
+    if forDevice == "SP"
+      #tweets
+        ul
+          if twcolumn == 1
+            li.column: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E9%A9%9A%E3%81%8D%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB%20filter%3Aimages%20%20exclude%3Aretweets" data-tweet-limit="5" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931485529131982848"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          if twcolumn == 2
+            li.column.spColumns: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%B3%20filter%3Aimages%20%20exclude%3Aretweets" width="100%" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931485529131982848"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            li.column.spColumns: <a class="twitter-timeline" href="https://twitter.com/search?q=%23%E3%83%81%E3%83%83%E3%83%97%E3%82%B9%E3%82%BF%E3%83%BC%20filter%3Aimages%20%20exclude%3Aretweets" width="100%" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar" data-border-color="#de301f" data-link-color="#e55937" data-widget-id="931534519059939328"></a> 
+  #more
+    ul
+      li.btn
+        a(href="https://twitter.com/search?f=tweets&q=%23%E9%A9%9A%E3%81%8D%E3%83%8E%E3%82%A2%E3%83%BC%E3%83%AB&src=typd" target="_blank"): img(src="assets/images/more_tw.jpg" alt="Twitterでみんなの驚きをもっと見る")
+      li.btn
+        a(href="https://www.instagram.com/explore/tags/驚きノアール" target="_blank"): img(src="assets/images/more_is.jpg" alt="Instagramでみんなの驚きをもっと見る")
+  #apply
+    h3.title1.titlecommon.fadeinScrollBefore
+      img(src="assets/images/apply_title01.jpg" alt="ノアールに驚いた感想をSNSに投稿")
+    #detail.fadeinScrollBefore
+      .detailPhoto
+        img(src="assets/images/detail_photo.jpg" alt="商品パッケージ")
+      .detailExplanation
+        img(src="assets/images/detail_text.jpg" alt="キャンペーン概要")
+    h3.title2.titlecommon.fadeinScrollBefore
+      img(src="assets/images/apply_title02.jpg" alt="応募方法")
+    #applySteps.fadeinScrollBefore
+      .step
+        .stepTitle
+          img(src="assets/images/step1.jpg" alt="step1")
+        .stepExplanation
+          p Twitter またはInstagramで公式アカウントをフォロー
+          a(href="https://twitter.com/intent/follow?screen_name=Noir_YBC" target="_blank"): img(src="assets/images/follow_tw.jpg" height="40px" width="232px" alt="Twitterでフォロー")
+          a(href="https://www.instagram.com/noir_ybc?ref=badge" target="_blank"): img(src="assets/images/follow_is.jpg" height="40px" width="232px" alt="Instagramでフォロー")
+      .step
+        .stepTitle
+          img(src="assets/images/step2.jpg" alt="step2")
+        .stepExplanation
+          p ハッシュタグ「<span class="addedText">#驚きノアール</span>
+            | 」を付けて、ノアールの画像と感想を投稿! ノアールを写真内に収めるように撮影して下さい。
+      .step
+        .stepTitle
+          img(src="assets/images/step3.jpg" alt="step3")
+        .stepExplanation
+          p ご当選された方には、DM（ダイレクトメッセージ）にてお知らせいたします。DM（ダイレクトメッセージ）に記載のURLより当選者専用画面にアクセスいただき、登録期間内に賞品の発送先登録を完了して下さい。
+      .stepNote
+        p 本企画への応募には、写真の投稿が必要です。
+          br
+          | 下記のボタンからTwitterもしくは、Instagramのアプリをダウンロード後、ハッシュタグ「#驚きノアール」と画像を添付していただき、応募完了となります。
+        ul
+          if forDevice == "PC"
+            li.twApp
+              img(src="assets/images/app_tw.jpg" width="264px" height="110px" alt="Twitterをダウンロード")
+            li.isApp
+              img(src="assets/images/app_is.jpg" width="264px" height="110px" alt="Instagramをダウンロード")
+          if forDevice == "SP"
+            li.twApp
+              a(href="" target="_blank"): img(src="" alt="Twitterをダウンロード")
+            li.isApp
+              a(href="" target="_blank"): img(src="" alt="Instagramをダウンロード")
+        //-ul
+          li.btn
+            a(href="http://twitter.com/share?text=【ツイート文】&url=【共有するURL】&hashtags=【ハッシュタグ】" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow"): img(src="assets/images/apply_tw.jpg" alt="Twitterで応募")
+          if forDevice == "SP"
+            li.btn
+              a(href="https://www.instagram.com/" target="_blank"): img(src="assets/images/apply_is.jpg" alt="Instagramで応募") 
+    h3.title3.titlecommon.fadeinScrollBefore
+      img(src="assets/images/apply_title03.jpg" alt="応募要項")
+    #outline.fadeinScrollBefore
+      if forDevice == "PC"
+        p.notation 各項目をクリックして必ず中の規約をご一読ください。
+      if forDevice == "SP"
+        p.notation 各項目をタップして必ず中の規約をご一読ください。
+      ul
+        li <span class="item">企画概要</span>
+          p.detail ノアールを撮影の上、ノアール公式TwitterまたはInstagramアカウントをフォローし、「#驚きノアール」というハッシュタグをつけてTwitterまたはInstagramで撮影したノアールの写真と感想を投稿してください。
+            br
+            | ※ご応募にはTwitterまたはInstagramのアカウントが必要です。
+            br
+            | ※当企画は、Twitter社・Instagram社とは一切関係ありません。
+            br
+            | ※一部のPC・スマートフォンではご参加いただけない場合がございます。
+            br
+            | ※携帯電話（フィーチャーフォン）、PHS、PDA、等ではご参加いただけません。
+            br
+            | ※お電話やハガキ、封書でのご応募は受付けておりません。
+        li <span class="item">賞品・ご当選者数</span>
+          p.detail ヤマザキビスケット製品詰め合わせ 1セット　（1500円相当）
+            br
+            | 抽選で300名様
+            br
+            | ※賞品の発送は2018年4月上旬頃を予定しております。
+        li <span class="item">応募締切</span>
+          p.detail 2018年2月28日（水）24：00
+        li <span class="item">応募条件</span>
+          p.detail ・TwitterアカウントまたはInstagramアカウントをお持ちであること
+            br
+            | ・ノアール公式TwitterまたはInstagramアカウントをフォローしていること
+            br
+            | ・該当のハッシュタグをつけてノアールの写真と感想を投稿していること
+            br
+            | ・日本国内にお住まいの方で、かつ賞品のお届け先が日本国内の方
+            br
+            | ※ご応募の後、TwitterアカウントまたはInstagramアカウントにおいて次に該当する変更操作・設定等が認められた場合、当選連絡および賞品の発送ができなくなる場合がありますのでご了承ください。
+            br
+            | - ノアール公式TwitterまたはInstagramアカウントのフォローの解除
+            br
+            | - 応募条件となる投稿の取り消し
+            br
+            | - Twitterアカウント名またはInstagramアカウント名の変更
+            br
+            | - TwitterアカウントまたはInstagramアカウントを非公開設定
+            br
+            | - Twitter・Instagramの退会
+        li <span class="item">当選発表</span>
+          p.detail 抽選の上、2018年3月中旬頃に運営事務局から当選者の方へのみTwitterまたはInstagramのダイレクトメッセージでご連絡させていただきます。
+            br
+            | ※ノアール公式アカウントのフォローをはずされておりますと当選連絡ができなくなりますので、ご注意ください。
+            br
+            | ※当選で獲得された権利は、他の人に譲渡することはできません。
+            br
+            | ※当選者用の入力フォームを他者に共有した場合、当選が無効となります。
+        li <span class="item">運営事務局</span>
+          p.detail #驚きノアール企画（以下、当企画）の運営一切は、ヤマザキビスケット企画事務局（以下、事務局）が行います。事務局業務は、ヤマザキビスケット株式会社（以下、YBC）が行います。業務の一部を第三者に委託している場合がございます。
+            br
+            | なお、事務局が必要と判断した場合には、本企画の規約を自由に変更できる他、当サイトの適正な運用を確保するために必要なあらゆる対応をとることができるものとします。
+        li <span class="item">注意事項規約</span>
+          p.detail ●応募に関する注意事項
+            br
+            | ・本キャンペーンにTwitterでご参加の場合はPC・スマートフォンから、Instagramでご参加の場合はスマートフォンからのご応募のみとなっております。
+            br
+            | ・お客様のご都合による賞品の交換、返品は受付けいたしませんのでご了承ください。
+            br
+            | ・ネット接続料および通信料はお客様のご負担となります。接続料および通信料は、お客様のご契約されている通信会社および接続会社により異なります。詳しくは各契約会社との契約内容をご確認ください。
+            br
+            | ・次の場合はいずれのご応募/ご当選も無効となります。ご注意ください。
+            br
+            | - 当選後、2018年3月25日（日）24：00までに発送先登録が完了されない場合。
+            br
+            | - 発送先登録の内容に不備がある場合。
+            br
+            | - 発送先登録完了後に住所変更のご連絡がない場合。
+            br
+            | - お客様のご住所が不明・連絡不能などの理由により賞品がお届けできない場合。
+            br
+            | - その他、ご応募に関して不正な行為があった場合。
+            br
+            | 
+            br
+            | ●写真投稿に関する注意事項
+            br
+            | TwitterまたはInstagramで応募する際、「＃驚きノアール」というハッシュタグがついていない投稿は応募として認められません。
+            br
+            | 投稿いただいたお写真は､当サイトに反映されます｡
+            br
+            | 投稿内容の修正や変更は一切お受けできません。
+            br
+            | 写真の投稿は、自己の責任の下で行い、当社は一切責任を負わないものとし、また、投稿写真（コメントを含む。以下同）が以下のいずれかにあたる場合には、キャンペーンの対象外とさせていただきます。
+            br
+            | 理由等に関するお問い合わせにも応じかねますのでご了承ください。
+            br
+            | 1.公序良俗に反する投稿
+            br
+            | 2.犯罪行為を誘引させる投稿
+            br
+            | 3.撮影が許可されていない場所での撮影および投稿
+            br
+            | 4.被写体の許可なしに撮影された写真の投稿
+            br
+            | 5.著作権等第三者の権利を侵害するもの、名誉・信用を毀損するもの、迷惑行為となるもの、特定のキャラクターやブランドを想起させるもの、不当な暴力を誘発、促進、または表現しているもの、その他法令違反となるもの、およびそのおそれがあると弊社が判断したもの
+            br
+            | 6.第三者や他社（その他商品を含む）を誹謗中傷する表現、差別的な表現、嫌悪感を抱く可能性のある表現、その他公序良俗に反する表現、およびこれらに該当するおそれがあると当社が判断したもの
+            br
+            | 7.広告・宣伝・営業活動・特定の思想・宗教への勧誘、またはそれらに類する内容を含むもの
+            br
+            | 8.住所等個人情報が含まれるもの
+            br
+            | 9.他のお客様の当企画への応募を妨害する行為
+            br
+            | 10.上記の他、当キャンペーンの趣旨にそぐわない等の理由で当社が対象外と判断したもの
+            br
+            | ※投稿写真は、当社が運営するホームページ、公式Twitter、Instagram等で引用（リツイートを含む）するほか、各種宣伝媒体にて許可なく使用する場合があります。
+            br
+            | ※投稿写真は、著作権などの権利のすべてが応募者に帰属するもの、および被写体の肖像権など、他者の諸権利を含む作品のうち、権利者の承認を得たものに限らせていただきます。
+            br
+            | ※万一、投稿写真について、第三者と紛争等が生じた場合は、応募者ご自身の責任と費用負担によって解決するものとし、当社および他の応募者に対し一切迷惑をかけないものとします。
+            br
+            | ※投稿写真に係わる一切の著作権（二次的著作物の利用に関わる権利を含みます）は、ご応募により当社に譲渡され帰属します。
+            br
+            | ※その他、Twitter・Instagramをご利用の際は、本利用規約の他、それぞれの規約を遵守してください。
+            br
+            | 
+            br
+            | ●応募規約
+            br
+            | 本応募要項を全てお読みいただき、ご同意いただいた方のみご応募ください。
+            br
+            | 1.当企画の運営一切は事務局が行います。事務局は、必要と判断した場合には、本応募要項を変更できるほか、当企画の適正な運用を確保するために必要なあらゆる対応ができるものとします。
+            br
+            | 2.応募者は当キャンペーンのご応募にあたり、本応募要項および事務局の運営方法に従うものとし、その運営方法について一切異議を申し立てないものとします。
+            br
+            | 3.ご当選された場合、応募で利用されたTwitterアカウントまたはInstagramアカウントへDM（ダイレクトメッセージ）にてご当選通知と発送先登録フォームのURLを送信します。
+            br
+            | 4.ご当選者には賞品発送および本人確認のため、発送先登録フォームにお名前、ご住所、お電話番号、Twitterアカウント名またはInstagramアカウント名等のご登録をしていただきます。
+            br
+            | 5.当サイトの利用によるいかなるトラブル・損害（直接、間接の損害別を問わず）が発生したとしてもYBCは一切の責任を負いません。
+            br
+            | 
+            br
+            | ●個人情報の利用目的
+            br
+            | お客様にご送付いただいた個人情報は、次の利用目的の範囲内で利用いたします。
+            br
+            | 1.当選者への通知、賞品の発送にかかわる連絡への利用。
+            br
+            | 2.商品、サービス向上の目的で、個人を特定しない統計的情報としての利用。
+            br
+            | 法令に定める場合を除き、個人情報を事前にご本人の同意を得ることなく、第三者に開示または提供いたしません。
+            br
+            | ●個人情報安全管理
+            br
+            | お客様の個人情報はYBCのプライバシーポリシーに基づき、万全の管理を行います。
+            br
+            | お預かりした個人情報の取り扱いについては、YBCホームページ内の『<a href="http://www.yamazaki-biscuits.co.jp/note_nb/privacy_nb/">プライバシーポリシー</a>』に記載されておりますのでご参照ください。
+            br
+            | ●賠償責任
+            br
+            | 当サイトの利用に関連して利用者と第三者との間に紛争が発生した場合には、利用者は、自身の責任と費用で当該紛争を解決するものとし、YBCに一切損害を与えることのないようにするものとします。万一、YBCに損害を与えた場合、YBCは当該応募者に対し、相応の損害賠償の請求ができるものとします。
+            br
+            | ●免責事項
+            br
+            | 当サイトの利用に関連して発生した利用者または第三者の損害について、YBCは一切の責任を負わないものとします。また、利用者が本企画の規約に違反していると事務局が判断した場合、アカウントのブロック等、事務局が必要と判断する措置を取ることができるものとし、これにより利用者が被った損害について、事務局は一切の責任を負わないものとします。
+            
+        li <span class="item">お問い合わせ先</span>
+          p.detail ヤマザキビスケット株式会社 #驚きノアール企画事務局
+            br
+            | メール：noir-yamazaki-biscuits@access-t.co.jp　月～金（祝日を除く）9:00～17:00
+  include /template/_navigation
+  if forDevice == "PC"
+    +navigation("footerNav","ノアールのおいしさの秘密", "index_noir_secret.html", "true")
+  if forDevice == "SP"
+    +navigation("footerNav","ブランドトップへ戻る", "index.html", "false")
+  

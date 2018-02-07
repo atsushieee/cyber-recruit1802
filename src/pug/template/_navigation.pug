@@ -1,0 +1,14 @@
+mixin navigation(navPlace, nav01, url, isNum)
+  nav(class=navPlace)
+    if navPlace == "headerNav"
+      h1: a(href="index.html"): img(src="assets/images/logo.png" height='76px' width='133px' alt="ノアールロゴマーク")
+    ul
+      li: a.linkBtn(href=url) #{nav01}
+      if forDevice == 'PC'
+        li: a.linkBtn(href="http://www.yamazaki-biscuits.co.jp/products_nb/products_cracker_n/index.html#category-noir") 製品ラインナップ
+      if forDevice == 'SP'
+        li: a.linkBtn(href="http://www.yamazaki-biscuits.co.jp/sp/products_nb/products_cracker_n/index.html?id=noir") 製品ラインナップ
+      if isNum == "true"
+        li: a.linkBtn(href="index.html") ブランドトップへ戻る
+    if navPlace == "headerNav"
+      img.packagePhoto(src="assets/images/package.jpg" height='201px' width='108px' alt="パッケージ")

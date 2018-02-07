@@ -1,0 +1,198 @@
+extend /template/_layout
+append variables
+  //- Required
+  - var pageTitle = ""
+  - var pageKeywords = ""
+  //- Not modified
+  - var pageUrl = relativePath
+
+block content
+  #key-visual.bottom-margin
+    .wrapper
+      h1
+        img.pc(src="images/key_text_pc.png", width="401px", height="295px", alt="キーコピー")
+        img.sp(src="images/key_text_sp.png", width="556px", height="378px", alt="キーコピー")
+      .center-btn
+        a(href="", blank="_target")
+          img(src="images/entry.png",alt="エントリーボタン")
+      
+  #concept-area.bottom-margin.top-margin
+    img(src="images/concept.jpg", alt="コンセプト")
+  
+  .wrapper
+    #about-area.bottom-margin.top-margin
+      .one-column
+        h2
+          img(src="images/about.png", alt="About")
+        .inner-contents
+          .contents-detail
+            p.main-copy 72時間集中選考、始まる。
+            p.sub-text 2019年卒【広告クリエイター】採用を開始します。
+              br
+              | 今回の採用は、選考官メンバーが各エリアに
+              br.br-sp
+              | 赴き選考を行う、「72時間集中選考」。
+              br
+              | 72時間以内に役員面接への切符をあなたに手渡します。
+              br
+              | 選考は以下の2つを実施する予定です。
+            ul
+              li.rounded-rectangle
+                span.item-text ワーク
+                  br.br-sp
+                  | ショップ
+                  .comments お題などについて
+                    br
+                    | は当日発表します
+              li.rounded-rectangle
+                span.item-text 個人面談
+          
+  #flow-area.top-margin.bottom-margin
+    .one-column
+      h2
+        img(src="images/flow.png", alt="Flow")
+      .wrapper
+        .contents-detail
+          img.pc(src="images/flow_steps_pc.png", alt="選考フロー")
+          img.sp(src="images/flow_steps_sp.png", alt="選考フロー")
+          
+  .wrapper
+    #other-area.bottom-margin.top-margin
+      .one-column
+        h2
+          img(src="images/area.png", width="243px", height="83px", alt="Area")
+        .contents-detail
+          img(src="images/place.png", alt="実施会場")
+      .inner-contents
+        .two-column
+          h2
+            img.normal-title(src="images/target.png", alt="対象者")
+          .contents-text
+            p.target-copy 2019年4月
+              br
+              | 入社可能な学生
+              br.br-sp
+              | （既卒可）
+            p.sub-text ※選考にて見送りとなった方からの
+              br
+              | 再応募は不可になります。
+              br
+              | ※入社時期については4月以外も応相談。
+        .two-column
+          h2
+            img.long-title(src="images/requirement.png", alt="募集職種")
+          .contents-text
+            p.jobs-copy 募集職種
+              br
+              | プランナー
+              br
+              | デザイナー
+              br
+              | コピーライター
+              br
+              | エンジニア
+  
+  #people-area.top-margin
+    .one-column
+      h2
+        img(src="images/people.png", width="243px", height="83px", alt="People")
+      .inner-contents
+        .contents-detail
+          ul
+            li
+              a.open-dialog(href=""): img(src="images/people/ninomiya.png" alt="二宮 功太")
+              br
+              | 二宮 功太
+              br
+              | <span class="jobs">Digital Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/ando.png" alt="安藤 達也")
+              br
+              | 安藤 達也
+              br
+              | <span class="jobs">Digital Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/kaneko.png" alt="金子 雅也")
+              br
+              | 金子 雅也
+              br
+              | <span class="jobs">Senior Producer</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/ashida.png" alt="芦田 直毅")
+              br
+              | 芦田 直毅
+              br
+              | <span class="jobs">CEO (CG Changer)</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/nakahashi.png" alt="中橋 敦")
+              br
+              | 中橋 敦
+              br
+              | <span class="jobs">Digital Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/yoshida.png" alt="吉田 敦")
+              br
+              | 吉田 敦
+              br
+              | <span class="jobs">Digital Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/tomonaga.png" alt="友長 裕美")
+              br
+              | 友長 裕美
+              br
+              | <span class="jobs">Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/aruga.png" alt="有賀 翔平")
+              br
+              | 有賀 翔平
+              br
+              | <span class="jobs">Digital Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/suzuki.png" alt="鈴木 夏菜")
+              br
+              | 鈴木 夏菜
+              br
+              | <span class="jobs">Art Director / Illustrator</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/miyamoto.png" alt="宮本 篤史")
+              br
+              | 宮本 篤史
+              br
+              | <span class="jobs">Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/watanabe.png" alt="渡辺 周平")
+              br
+              | 渡辺 周平
+              br
+              | <span class="jobs">Creative Director</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/hara.png" alt="原 江美子")
+              br
+              | 原 江美子
+              br
+              | <span class="jobs">Copy Writer</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/nishiguchi.png" alt="西口 佳佑")
+              br
+              | 西口 佳佑
+              br
+              | <span class="jobs">Planner</span>
+            li
+              a.open-dialog(href=""): img(src="images/people/fujimoto.png" alt="藤本 健治")
+              br
+              | 藤本 健治
+              br
+              | <span class="jobs">CEO (Movie Monster)</span>
+
+  #special-area
+    h2
+      img(src="images/special.png", alt="スペシャルコンテンツ")
+    .contents-detail
+      a(href="", target="_blank"): img(src="", width="", height="", alt="")
+  
+  #contact-area
+    .one-column
+      p.main-copy お問い合わせ先
+      p.sub-text お問い合わせは下記窓口宛にご連絡ください。
+        br
+        | <a href="", target="_blank">人事本部、新卒採用担当</a>

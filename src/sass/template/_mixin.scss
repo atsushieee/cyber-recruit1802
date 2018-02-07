@@ -1,0 +1,84 @@
+@mixin naviArea($width, $height, $color: $baseColor) {
+  text-align: center;
+  border: solid 1px $color;
+  width: $width;
+  height: $height;
+  line-height: $height;
+};
+
+@mixin naviText($color: $baseColor, $size: 15px, $weight: bold) {
+  font-family: $basefont;
+  font-weight: $weight;
+  color: $color;
+  font-size: $size;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+@mixin preText($text) {
+  background-color: $secondColor;
+  color: $whitecolor;
+  font-family: $lineFont;
+  font-size: $text;
+  opacity: 0;
+  .preparation {
+    margin: 0 auto;
+    width: 980px;
+  }
+  p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .preparation p {
+    width: 980px;
+  }
+}
+
+@mixin steps($width: 272px, $height: 270px) {
+  background: url('../images/steps_bg_top.jpg') no-repeat top, url('../images/steps_bg_bottom.jpg') no-repeat bottom, url('../images/steps_bg_middle.jpg') repeat;
+  width: $width;
+  height: $height;
+}
+
+@mixin applysetting {
+  background-color: #FFFAF0;
+  border: solid 2px $baseColor;
+  font-size: 14px;
+  font-style: $lineFont;
+  letter-spacing: .1em;
+}
+
+@mixin outline($arrow: 640px) {
+  background: url('../images/arrow_bg.png') no-repeat $arrow 26px;
+  border-top: solid 2px $baseColor;
+  cursor: pointer;
+  font-size: 20px;
+  left: 30px;
+  line-height: 60px;
+  .detail {
+    border-top: solid 2px $baseColor;
+    display: none;
+    font-size: 14px;
+    max-height: 120px;
+    overflow: scroll;
+    padding: 20px;
+  }
+  .item {
+    margin-left: 8px;
+  }
+}
+
+// フェードイン系アニメーション
+@mixin fadeinBefore {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4ss;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+@mixin fadein {
+  opacity: 1;
+}
