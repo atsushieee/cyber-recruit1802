@@ -152,7 +152,7 @@ a:hover {
 #key-visual {
   background-image: url('../images/key_visual_pc.jpg');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 h1 {
@@ -180,12 +180,13 @@ h1 {
 
 #about-area {
   background-image: url('../images/second_visual_pc.jpg');
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .main-copy {
   font-size: 38px;
+  line-height: 1.5em;
 }
 
 .sub-text {
@@ -200,8 +201,8 @@ h1 {
 }
 
 .rounded-rectangle {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border: solid 5px #000000;
   border-radius: 15px;
   display: inline-block;
@@ -227,18 +228,23 @@ h1 {
 #flow-area, #other-area {
   .contents-detail {
     margin: 0 auto;
-    width: 65%;
+    //width: 65%;
+    width: 86%;
     img {
       width: 100%;
     }
   }
 }
 
+#flow-area .contents-detail {
+  width: 65%;
+}
+
 
 #other-area {
   background-image: url('../images/third_visual_pc.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: top;
+  background-repeat: repeat-y;
   .target-copy {
     font-size: 30px;
     line-height: 1.2em;
@@ -276,6 +282,96 @@ h1 {
       width: 100%;
     }
   }
+  .clicked-img {
+    cursor: pointer;
+  }
+  .clicked-img:hover {
+    opacity: 0.7;
+  }
+}
+
+
+#modal-area {
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  .modal-content {
+    background-color: #ffffff;
+    border: 1px solid #888;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin: auto;
+    max-width: 854px;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: center;
+    width: 85%;
+    height: 535px;
+    #prev_btn, #next_btn, #close_btn {
+      cursor: pointer;
+      position: absolute;
+      img {
+        width: 50%;
+      }
+    }
+    #close_btn {
+      right: 0;
+      top: 25px;
+    }
+    #prev_btn {
+      top: 50%;
+      left: 5px;
+    }
+    #next_btn {
+      top: 50%;
+      right: -20px;
+    }
+    #prev_btn:hover, #next_btn:hover, #close_btn:hover {
+      opacity: 0.5;
+    }
+    .contents {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .personal-photo {
+      display: inline-block;
+      width: 35%;
+      img {
+        max-width: 320px;
+        width: 100%;
+      }
+    }
+    .personal-intro {
+      display: inline-block;
+      float: right;
+      width: 60%;
+      .name {
+        margin-top: 10px;
+        font-size: 40px;
+      }
+      .job-name {
+        font-size: 20px;
+        margin: 15px 10px 20px;
+      }
+      .detail-text {
+        font-size: 12px;
+        line-height: 2em;
+      }
+    }
+  }
 }
 
 
@@ -301,6 +397,44 @@ h1 {
   .sub-text {
     line-height: 2.5em;
     margin-bottom: 0;
+  }
+}
+
+
+@media(max-width:768px){
+  #modal-area .modal-content {
+    height: 450px;
+    padding: 45px 20px;
+    .personal-photo {
+      display: block;
+      text-align: center;
+      width: 100%
+    }
+    .personal-intro {
+      display: block;
+      float: none;
+      width: 100%;
+      .name {
+        margin-top: 5px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .job-name {
+        font-size: 15px;
+        margin: 5px 0 10px;
+        text-align: center;
+      }
+      .detail-text {
+        font-size: 10px;
+        line-height: 1.5em;
+      }
+    }
+    #prev_btn {
+      top: 35%;
+    }
+    #next_btn {
+      top: 35%;
+    }
   }
 }
 
@@ -346,6 +480,7 @@ h1 {
 
   #key-visual {
     background-image: url('../images/key_visual_sp.jpg');
+    background-position: top;
     background-size: 100% auto;
   }
 
@@ -393,8 +528,8 @@ h1 {
 
   .rounded-rectangle {
     border: solid 3px #000000;
-    height: 25vw;
-    width: 30%;
+    height: 30vw;
+    width: 35%;
     .item-text {
       font-size: 16px;
       line-height: 1.2em;
@@ -421,6 +556,7 @@ h1 {
     .sub-text {
       font-size: 12px;
       line-height: 1.4em;
+      margin-bottom: 0;
     }
     .jobs-copy {
       font-size: 20px;
@@ -439,12 +575,12 @@ h1 {
   #people-area .contents-detail {
     font-size: 12px;
     .jobs {
-      font-size: 8px;
+      font-size: 10px;
     }
     li {
-      height: 110px;
+      height: 160px;
       margin: 0 8px 30px;
-      width: 82px;
+      width: 115px;
       img {
         margin-bottom: 5px;
       }

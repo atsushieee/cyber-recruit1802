@@ -13,7 +13,7 @@ block content
         img.pc(src="images/key_text_pc.png", width="401px", height="295px", alt="キーコピー")
         img.sp(src="images/key_text_sp.png", width="556px", height="378px", alt="キーコピー")
       .center-btn
-        a(href="", blank="_target")
+        a(href="https://mypage2019.cyberagent.co.jp/student/mypage", target='_blannk')
           img(src="images/entry.png",alt="エントリーボタン")
       
   #concept-area.bottom-margin.top-margin
@@ -62,7 +62,12 @@ block content
         h2
           img(src="images/area.png", width="243px", height="83px", alt="Area")
         .contents-detail
-          img(src="images/place.png", alt="実施会場")
+          //img(src="images/place.png", alt="実施会場")
+          p.main-copy 【京都】2018年3月x日(x)
+            br
+            | 【東京】2018年3月x日(x)
+          p.sub-text 他エリアも、随時追加予定です。
+
       .inner-contents
         .two-column
           h2
@@ -99,97 +104,212 @@ block content
       .inner-contents
         .contents-detail
           ul
-            li
-              a.open-dialog(href=""): img(src="images/people/ninomiya.png" alt="二宮 功太")
+            li.people-modal
+              img#0.clicked-img(src="images/people/ninomiya.png" alt="二宮 功太")
               br
               | 二宮 功太
               br
               | <span class="jobs">Digital Creative Director</span>
-            li
-              a.open-dialog(href=""): img(src="images/people/ando.png" alt="安藤 達也")
+            li.people-modal
+              img#1.clicked-img(src="images/people/ando.png" alt="安藤 達也")
               br
               | 安藤 達也
               br
               | <span class="jobs">Digital Creative Director</span>
-            li
-              a.open-dialog(href=""): img(src="images/people/kaneko.png" alt="金子 雅也")
+            li.people-modal
+              img#2.clicked-img(src="images/people/kaneko.png" alt="金子 雅也")
               br
               | 金子 雅也
               br
               | <span class="jobs">Senior Producer</span>
             li
-              a.open-dialog(href=""): img(src="images/people/ashida.png" alt="芦田 直毅")
+              img#3.clicked-img(src="images/people/ashida.png" alt="芦田 直毅")
               br
               | 芦田 直毅
               br
               | <span class="jobs">CEO (CG Changer)</span>
             li
-              a.open-dialog(href=""): img(src="images/people/nakahashi.png" alt="中橋 敦")
+              img#4.clicked-img(src="images/people/nakahashi.png" alt="中橋 敦")
               br
               | 中橋 敦
               br
               | <span class="jobs">Digital Creative Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/yoshida.png" alt="吉田 敦")
+              img#5.clicked-img(src="images/people/yoshida.png" alt="吉田 敦")
               br
               | 吉田 敦
               br
               | <span class="jobs">Digital Creative Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/tomonaga.png" alt="友長 裕美")
+              img#6.clicked-img(src="images/people/tomonaga.png" alt="友長 裕美")
               br
               | 友長 裕美
               br
               | <span class="jobs">Creative Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/aruga.png" alt="有賀 翔平")
+              img#7.clicked-img(src="images/people/aruga.png" alt="有賀 翔平")
               br
               | 有賀 翔平
               br
               | <span class="jobs">Digital Creative Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/suzuki.png" alt="鈴木 夏菜")
+              img#8.clicked-img(src="images/people/suzuki.png" alt="鈴木 夏菜")
               br
               | 鈴木 夏菜
               br
               | <span class="jobs">Art Director / Illustrator</span>
             li
-              a.open-dialog(href=""): img(src="images/people/miyamoto.png" alt="宮本 篤史")
+              img#9.clicked-img(src="images/people/miyamoto.png" alt="宮本 篤史")
               br
               | 宮本 篤史
               br
               | <span class="jobs">Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/watanabe.png" alt="渡辺 周平")
+              img#10.clicked-img(src="images/people/watanabe.png" alt="渡辺 周平")
               br
               | 渡辺 周平
               br
               | <span class="jobs">Creative Director</span>
             li
-              a.open-dialog(href=""): img(src="images/people/hara.png" alt="原 江美子")
+              img#11.clicked-img(src="images/people/hara.png" alt="原 江美子")
               br
               | 原 江美子
               br
               | <span class="jobs">Copy Writer</span>
             li
-              a.open-dialog(href=""): img(src="images/people/nishiguchi.png" alt="西口 佳佑")
+              img#12.clicked-img(src="images/people/nishiguchi.png" alt="西口 佳佑")
               br
               | 西口 佳佑
               br
               | <span class="jobs">Planner</span>
             li
-              a.open-dialog(href=""): img(src="images/people/fujimoto.png" alt="藤本 健治")
+              img#13.clicked-img(src="images/people/fujimoto.png" alt="藤本 健治")
               br
               | 藤本 健治
               br
               | <span class="jobs">CEO (Movie Monster)</span>
+    // Modal parts
+    #modal-area
+      .modal-content
+        .contents#people0
+          .personal-photo
+            img(src="images/people/ninomiya.png", alt="二宮 功太")
+          .personal-intro
+            .name 二宮 功太
+            .job-name Digital Creative Director
+            .detail-text 2004年入社。広告の企画から制作までのプランニング、クリエイティブ領域を担当。第8回東京インタラクティブアドアワード、第7,10回のモバイル広告大賞受賞。2017空間デザイン賞受賞。デジタルハリウッド大学院 非常勤講師。
+        .contents#people1
+          .personal-photo
+            img(src="images/people/ando.png", alt="安藤 達也")
+          .personal-intro
+            .name 安藤 達也
+            .job-name Digital Creative Director
+            .detail-text 2007年入社。兵庫県生まれ。コピーライター、プランナーを経て、現在。戦略・企画・制作を担当。「ビジネス開発」既存の広告の枠を超えたソリューションを得意とする。
+        .contents#people2
+          .personal-photo
+            img(src="images/people/kaneko.png", alt="金子 雅也")
+          .personal-intro
+            .name 金子 雅也
+            .job-name Senior Producer
+            .detail-text 1984年 兵庫県生まれ。鋭い洞察力、豊かな経験、すり足歩行。どんなトラブルにも動じない。人の話を長くは聞けない34歳。
+        .contents#people3
+          .personal-photo
+            img(src="images/people/ashida.png", alt="芦田 直毅")
+          .personal-intro
+            .name 芦田 直毅
+            .job-name CEO (CG Changer)
+            .detail-text 2013年まで大阪大学で「仕掛学(Shikakeology)」を専攻。卒業後、教育、飲料、小売り、製薬、飲食業界等、 幅広いクライアントのデジタルマーケティングの戦略立案・企画・制作を担当。データを活用したO2O戦略やCRM戦略、サービス開発立案にも携わる。2017年6月、CGを活用した広告クリエイティブ制作に特化した「株式会社CGチェンジャー」設立に伴い、代表取締役社長に就任。現職。
+        .contents#people4
+          .personal-photo
+            img(src="images/people/nakahashi.png", alt="中橋 敦")
+          .personal-intro
+            .name 中橋 敦
+            .job-name Digital Creative Director
+            .detail-text 1981年　福岡生まれ。スポーツ、アパレル、サービス、自動車、飲料業界などの企画から制作までのクリエイティブ領域を担当。ブレーン「いま一緒に仕事をしたいU35クリエーター」の一人に選出。 デジタルハリウッド大学・大学院非常勤講師（講義テーマ：テクノロジー&コミュニケーション）
+        .contents#people5
+          .personal-photo
+            img(src="images/people/yoshida.png", alt="吉田 敦")
+          .personal-intro
+            .name 吉田 敦
+            .job-name Digital Creative Director
+            .detail-text 2003年入社。営業へ配属されるも、営業の仕事よりも広告を作ることに熱中し、2006年にクリエイティブ局異動。大手飲料やメディア企業のキャンペーン企画制作に従事。途中会社の命により新規ビジネス事業部の立ち上げとしてクリエイティブ領域専門の人事を担当。立ち上げ終了後、広告制作に戻る。サブカル領域を得意とし、各種PVやアニメーション制作、イベントプロデュースなどに実績がある。 AIR JORDAN収集家、フィギュア好き、七福神ハンター、元ハガキ職人。
+        .contents#people6
+          .personal-photo
+            img(src="images/people/tomonaga.png", alt="友長 裕美")
+          .personal-intro
+            .name 友長 裕美
+            .job-name Creative Director
+            .detail-text 2009年新卒入社。広告事業本部で営業、コンサルを経て、Ameba事業本部のスマートフォンアプリサービスプランナーへ転身。サービス開発の中で、クリエイティブに興味を持ちWEBデザインの学校へ通いクリエイティブを学ぶ。現在は、広告事業本部の大阪支社にてダイレクトクリエイティブ局に所属。得意領域は女性系通販。
+        .contents#people7
+          .personal-photo
+            img(src="images/people/aruga.png", alt="有賀 翔平")
+          .personal-intro
+            .name 有賀 翔平
+            .job-name Digital Creative Director
+            .detail-text 2014年にサイバーエージェントに入社。クリエイティブ、アドテク、メディアプランニングの部署を経験し、デジタル全体のプランニングを手がける。
+              br
+              | 担当業界はアパレル、飲料、ファーストフード、旅行、映画、化粧品、競馬、SVOD、アニメなど。得意領域は、バイラルキャンペーン。受賞歴に、読売広告大賞、PRアワードなど。
+        .contents#people8
+          .personal-photo
+            img(src="images/people/suzuki.png", alt="鈴木 夏菜")
+          .personal-intro
+            .name 鈴木 夏菜
+            .job-name Art Director / Illustrator
+            .detail-text 広告全般のコンセプトから企画、アートディレクションを担当。
+              br
+              | イラストレーターとしても活動し、書籍の表紙やweb広告用イラスト、キャラクターデザインなどを経験。
+              br
+              | ベタトーンで万人受けするテイストが得意。
+              br
+              | 自分が介在しない人間関係を見守り、感情を読み取るのがとにかく好き。
+              br
+              | 最近は宇宙人が地球に旅行にきた時のことを考えて日々をすごしている。
+        .contents#people9
+          .personal-photo
+            img(src="images/people/miyamoto.png", alt="宮本 篤史")
+          .personal-intro
+            .name 宮本 篤史
+            .job-name Director
+            .detail-text 芸大／美大向け予備校で講師として勤務後、インテリア／住宅業界で企画・設計・製造施工・広報職を7年間経験。2013年、サイバーエージェントに入社。WEB広告、CRM、ECサイトなどのクリエイティブ制作やサービス開発に従事。アドテックなど広告カンファレンスへの登壇をはじめ、大学や宣伝会議などでの講義活動にも関わる。
+        .contents#people10
+          .personal-photo
+            img(src="images/people/watanabe.png", alt="渡辺 周平")
+          .personal-intro
+            .name 渡辺 周平
+            .job-name Creative Director
+            .detail-text 2008年12月デザイナーとしてサイバーエージェント入社。WEB広告のプランニングから最終アウトプットまで幅広く担当。マーケティングやテクノロジー、クリエイティブが渾然一体となったデジタルデザインの可能性を模索中。
+        .contents#people11
+          .personal-photo
+            img(src="images/people/hara.png", alt="原 江美子")
+          .personal-intro
+            .name 原 江美子
+            .job-name Copy Writer
+            .detail-text 他社で3年間営業を経験した後、2015年にサイバーエージェント中途入社。入社以来、ダイレクトクリエイティブのプランナー・ディレクターとしてデータベース系クライアント（人材や旅行系・美容系ポータルサイトなど）を幅広く担当。2017年にマネージャーとなり、コピーライターＧの立ち上げに際しコピーライターへと転身。趣味はキャンプとフェスと、Perfume。
+        .contents#people12
+          .personal-photo
+            img(src="images/people/nishiguchi.png", alt="西口 佳佑")
+          .personal-intro
+            .name 西口 佳佑
+            .job-name Planner
+            .detail-text 2015年08月　サイバーエージェント入社。入社以来、クリエイティブ局にて大手ECやメディアなどの非ゲーム領域の広告プランニングを担当。昨年より、AIを用いたクリエイティブサービスを開発する部署を立ち上げ。テクノロジーを駆使した広告プランナーになるべく絶賛修行中。
+        .contents#people13
+          .personal-photo
+            img(src="images/people/fujimoto.png", alt="藤本 健治")
+          .personal-intro
+            .name 藤本 健治
+            .job-name CEO (Movie Monster)
+            .detail-text 2008年サイバーエージェントへ入社。西日本事業部にて通信販売や不動産事業のクリエイティブディレクションに従事。2011年より、広告事業本部にて、通信・人材・金融・通販など、他業種に渡るクリエイティブプランニングを担当する。2017年インフィード広告の動画クリエイティブ制作に特化した関連会社、株式会社ムービーモンスターを設立。
+        #prev_btn: img(src="images/prev.png", alt="prev_btn")
+        #next_btn: img(src="images/next.png", alt="next_btn")
+        #close_btn: img(src="images/close.png", alt="close_btn")
 
-  #special-area
-    h2
-      img(src="images/special.png", alt="スペシャルコンテンツ")
-    .contents-detail
-      a(href="", target="_blank"): img(src="", width="", height="", alt="")
-  
+  // -
+    #special-area
+      h2
+        img(src="images/special.png", alt="スペシャルコンテンツ")
+      .contents-detail
+        a(href="", target="_blank"): img(src="", width="", height="", alt="")
+    
   #contact-area
     .one-column
       p.main-copy お問い合わせ先
