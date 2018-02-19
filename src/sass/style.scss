@@ -54,7 +54,7 @@ table {
 
 body {
   font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.1em;
 }
 
@@ -100,22 +100,16 @@ a:hover {
   padding-bottom: 115px;
 }
 
+.middle-bottom-margin {
+  padding-bottom: 150px;
+}
+
 .top-margin {
   padding-top: 115px;
 }
 
-#concept-area, #flow-area, #people-area, #special-area {
+#about-area, #people-area, #special-area {
   background-color: #000000;
-}
-
-.one-column h2 {
-  margin-bottom: 75px;
-  img {
-    display: block;
-    height: 83px;
-    margin: auto;
-    width: 243px;
-  }
 }
 
 .two-column {
@@ -151,42 +145,33 @@ a:hover {
 
 #key-visual {
   background-image: url('../images/key_visual_pc.jpg');
-  background-position: center;
+  background-position: top;
   background-repeat: repeat-y;
 }
 
 h1 {
-  padding: 230px 0 40px 95px;
+  padding: 310px 0 20px 75px;
 }
 
 #key-visual a {
-  margin-left: 100px;
+  margin-left: 85px;
 }
 
 #key-visual a img {
   height: auto;
-  width: 256px;
-}
-
-
-#concept-area img {
-  display: block;
-  height: auto;
-  margin: auto;
-  max-width: 680px;
-  width: 53%;
+  width: 348px;
 }
 
 
 #about-area {
-  background-image: url('../images/second_visual_pc.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
+	color: #ffffff;
 }
 
 .main-copy {
-  font-size: 38px;
+  font-size: 32px;
   line-height: 1.5em;
+	margin: 0 auto;
+	width: 550px;
 }
 
 .sub-text {
@@ -194,16 +179,18 @@ h1 {
   line-height: 3.58em;
 }
 
-.contents-detail ul {
-  li:first-child {
-    margin-right: 10px;
-  }
+.added-exp {
+	margin-bottom: 50px;
+}
+
+.contents-detail li {
+  margin: 0 35px;
 }
 
 .rounded-rectangle {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
-  border: solid 5px #000000;
+  border: solid 5px #ffffff;
   border-radius: 15px;
   display: inline-block;
   height: 187px;
@@ -224,6 +211,38 @@ h1 {
   }
 }
 
+#second-visual-area {
+	background-image: url('../images/second_visual_pc.jpg');
+  background-position: 50% 900px;
+  background-repeat: repeat-y;
+}
+
+.one-column {
+	text-align: center;
+}
+h2 {
+	border-bottom: 5px solid #000000;
+	display: inline-block;
+	font-size: 39px;
+	font-weight: bold;
+	margin-bottom: 75px;
+	padding-bottom: 8px;
+}
+.white-title {
+	border-bottom: 5px solid #ffffff;
+	color: #ffffff;
+}
+
+#entry-area {
+	.main-copy {
+		font-size: 20px;
+		margin-bottom: 80px;
+	}
+	img {
+		max-width: 348px;
+		width: 62%;
+	}
+}
 
 #flow-area, #other-area {
   .contents-detail {
@@ -237,14 +256,13 @@ h1 {
 }
 
 #flow-area .contents-detail {
-  width: 65%;
+	min-width: 550px;
+	width: 65%;
 }
 
 
 #other-area {
-  background-image: url('../images/third_visual_pc.jpg');
-  background-position: top;
-  background-repeat: repeat-y;
+	font-weight: bold;
   .target-copy {
     font-size: 30px;
     line-height: 1.2em;
@@ -255,7 +273,7 @@ h1 {
   }
   .jobs-copy {
     font-size: 30px;
-    line-height: 1.8em;
+    line-height: 1.7em;
   }
 }
 
@@ -266,7 +284,7 @@ h1 {
 
 
 #people-area .contents-detail {
-  color: #ffffff;
+	color: #ffffff;
   font-size: 25px;
   .jobs {
     font-size: 16px;
@@ -386,7 +404,7 @@ h1 {
 }
 
 
-#contact-area {
+#contact-area, footer {
   background-color: #323333;
   color: #ffffff;
   padding: 75px 0;
@@ -398,6 +416,15 @@ h1 {
     line-height: 2.5em;
     margin-bottom: 0;
   }
+}
+
+footer {
+	font-size: 14px;
+	padding: 0 0 75px;
+	img {
+		margin: 0 11px 60px;
+		width: 41px;
+	}
 }
 
 
@@ -441,7 +468,7 @@ h1 {
 
 @media(max-width:640px){
   body {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .top-margin {
@@ -452,13 +479,16 @@ h1 {
     padding-bottom: 35px;
   }
 
+	.middle-bottom-margin {
+		padding-bottom: 50px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
   .one-column h2 {
     margin-bottom: 35px;
-    img {
-      height: auto;
-      max-width: 243px;
-      width: 38%;
-    }
   }
 
   header {
@@ -485,7 +515,7 @@ h1 {
   }
 
   h1 {
-    padding: 225px 0 30px;
+    padding: 280px 0 30px;
   }
 
   h1 img {
@@ -504,7 +534,7 @@ h1 {
 
   #key-visual a img {
     height: auto;
-    width: 55%;
+    width: 62%;
   }
 
   #concept-area img {
@@ -512,24 +542,26 @@ h1 {
     width: 76%;
   }
 
-  #about-area {
+  #second-visual-area {
     background-image: url('../images/second_visual_sp.jpg');
     background-size: 100% auto;
   }
 
   .main-copy {
-    font-size: 22px;
+    font-size: 15px;
+		width: auto;
   }
 
   .sub-text {
     margin: 20px auto 35px;
+		max-width: 86%;
     line-height: 3.58em;
   }
 
   .rounded-rectangle {
-    border: solid 3px #000000;
+    border: solid 3px #ffffff;
     height: 30vw;
-    width: 35%;
+    width: 30%;
     .item-text {
       font-size: 16px;
       line-height: 1.2em;
@@ -542,25 +574,48 @@ h1 {
     }
   }
 
+	.added-exp {
+		margin-bottom: 20px;
+	}
+
+	.contents-detail li {
+	  margin: 0 5px;
+	}
+
+	#entry-area {
+		.main-copy {
+			font-size: 10px;
+			font-weight: bold;
+			line-height: 2.0em;
+			margin-bottom: 40px;
+			max-width: 86%;
+			text-align: left;
+		}
+	}
+
+	#flow-area .contents-detail {
+		max-width: 300px;
+		min-width: 0;
+	}
+
 
   #other-area {
-    background-image: url('../images/third_visual_sp.jpg');
-    background-size: 100% auto;
     .contents-detail {
       width: 86%;
     }
     .target-copy {
-      font-size: 20px;
-      line-height: 1.5em;
+      font-size: 15px;
+      line-height: 2.0em;
     }
     .sub-text {
-      font-size: 12px;
-      line-height: 1.4em;
+      font-size: 10px;
+      line-height: 1.8em;
       margin-bottom: 0;
+			max-width: 100%;
     }
     .jobs-copy {
-      font-size: 20px;
-      line-height: 1.8em;
+      font-size: 15px;
+      line-height: 2.0em;
     }
   }
 
@@ -590,4 +645,9 @@ h1 {
   #contact-area {
     padding: 40px 0;
   }
+
+	footer {
+		font-size: 10px;
+		padding: 0 0 15px;
+	}
 }
