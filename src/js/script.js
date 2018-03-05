@@ -1,5 +1,10 @@
 var modal_num = 0;
 
+
+window.onresize = function () {
+  arrange_person();
+};
+
 window.onload = function() {
   // Get the modal
   var modal = document.getElementById('modal-area');
@@ -9,7 +14,7 @@ window.onload = function() {
 
   var people_contents = [];
   var people_btn = [];
-  var total_num = 14
+  var total_num = 15;
 
   for(var i=0; i<total_num; i++) {
     var content = document.getElementById('people' + i );
@@ -17,6 +22,8 @@ window.onload = function() {
     people_contents.push(content);
     people_btn.push(btn);
   }
+
+  arrange_person();
 
   for (var j=0; j<total_num; j++) {
     people_btn[j].onclick = function(ele) {
@@ -64,3 +71,21 @@ window.onload = function() {
       }
   };
 };
+
+function arrange_person() {
+  var full_width =document.getElementById('person-wrapper').offsetWidth;
+  var img_width = 0;
+  if(window.innerWidth < 641) {
+    img_width =document.getElementsByClassName('people-modal')[0].offsetWidth + 20;
+  } else {
+    img_width =document.getElementsByClassName('people-modal')[0].offsetWidth + 32;
+  }
+
+  var num = parseInt(full_width / img_width);
+  var test = (full_width - img_width*num) / 2 + 'px';
+  document.getElementById('person-list').style.marginLeft = test;
+  console.log(full_width);
+  console.log(img_width);
+  console.log(num);
+  console.log(test);
+}

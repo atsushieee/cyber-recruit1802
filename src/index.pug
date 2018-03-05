@@ -1,7 +1,7 @@
 extend /template/_layout
 append variables
   //- Required
-  - var pageTitle = "全国5都市、会いに行きます。 - 広告クリエーター採用"
+  - var pageTitle = "全国5都市、会いに行きます。 - 広告クリエイター採用"
   - var pageKeywords = "サイバーエージェント, CyberAgent, 革命人, 新卒採用"
   //- Not modified
   - var pageUrl = relativePath
@@ -10,12 +10,12 @@ block content
   #key-visual.middle-bottom-margin
     .wrapper
       h1
-        img.pc(src="images/key_text_pc.png", width="416px", height="219px", alt="キーコピー")
+        img.pc(src="images/key_text_pc.png", width="410px", height="219px", alt="キーコピー")
         img.sp(src="images/key_text_sp.png", width="578px", height="271px", alt="キーコピー")
       .center-btn
         a(href="https://mypage2019.cyberagent.co.jp/student/mypage", target='_blannk')
           img(src="images/entry.png",alt="エントリーボタン")
-  
+
   #about-area.bottom-margin.top-margin
     .one-column
       h2.white-title 概要
@@ -27,13 +27,13 @@ block content
           br
           | 「72時間集中選考」を実施します。
           br
-          | 開催地は、東京・大阪・京都・金沢・九州の全５都市。
+          | 開催地は、東京・大阪・京都・金沢・福岡の全５都市。
           br
           | 選考を突破した方には、
           br.br-sp
           | 次回役員面接への切符をあなたに手渡します。
           br
-          | 2019年新卒・広告クリエーター採用、
+          | 2019年新卒・広告クリエイター採用、
           br
           | 若干名募集します。
         p.added-exp 選考は以下の2つを実施する予定です。
@@ -47,7 +47,7 @@ block content
                 | は当日発表します
           li.rounded-rectangle
             span.item-text 個人面談
-          
+
   #second-visual-area
     #entry-area.top-margin.middle-bottom-margin
       .one-column
@@ -59,7 +59,7 @@ block content
         .center-btn
           a(href="https://mypage2019.cyberagent.co.jp/student/mypage", target='_blannk')
             img(src="images/entry.png",alt="エントリーボタン")
-    
+
     #flow-area.middle-bottom-margin
       .one-column
         h2 選考フロー
@@ -67,16 +67,14 @@ block content
           .contents-detail
             img.pc(src="images/flow_steps_pc.png", alt="選考フロー")
             img.sp(src="images/flow_steps_sp.png", alt="選考フロー")
-      
-    #other-area.bottom-margin     
+
+    #other-area.bottom-margin
       .wrapper
         .one-column
           h2 開催地
           .contents-detail
             //img(src="images/place.png", alt="実施会場")
             p.main-copy 【京都】2018年3月09日~3月11日
-              br
-              | 【東京】2018年3月16日~3月18日
             p.sub-text 他エリアも、随時追加予定です。
 
         .inner-contents
@@ -107,10 +105,10 @@ block content
 
   #people-area.top-margin
     .one-column
-      h2.white-title 選考会に参加するクリエーター
+      h2.white-title 選考会に参加するクリエイター
       .inner-contents
-        .contents-detail
-          ul
+        .contents-detail#person-wrapper
+          ul#person-list
             li.people-modal
               img#0.clicked-img(src="images/people/ninomiya.png" alt="二宮 功太")
               br
@@ -195,6 +193,12 @@ block content
               | 藤本 健治
               br
               | <span class="jobs">CEO (Movie Monster)</span>
+            li
+              img#14.clicked-img(src="images/people/tominaga.png" alt="富永 晴菜")
+              br
+              | 富永 晴菜
+              br
+              | <span class="jobs">Planner</span>
     // Modal parts
     #modal-area
       .modal-content
@@ -232,7 +236,7 @@ block content
           .personal-intro
             .name 中橋 敦
             .job-name Digital Creative Director
-            .detail-text 1981年　福岡生まれ。スポーツ、アパレル、サービス、自動車、飲料業界などの企画から制作までのクリエイティブ領域を担当。ブレーン「いま一緒に仕事をしたいU35クリエーター」の一人に選出。 デジタルハリウッド大学・大学院非常勤講師（講義テーマ：テクノロジー&コミュニケーション）
+            .detail-text 1981年　福岡生まれ。スポーツ、アパレル、サービス、自動車、飲料業界などの企画から制作までのクリエイティブ領域を担当。ブレーン「いま一緒に仕事をしたいU35クリエイター」の一人に選出。 デジタルハリウッド大学・大学院非常勤講師（講義テーマ：テクノロジー&コミュニケーション）
         .contents#people5
           .personal-photo
             img(src="images/people/yoshida.png", alt="吉田 敦")
@@ -306,6 +310,13 @@ block content
             .name 藤本 健治
             .job-name CEO (Movie Monster)
             .detail-text 2008年サイバーエージェントへ入社。西日本事業部にて通信販売や不動産事業のクリエイティブディレクションに従事。2011年より、広告事業本部にて、通信・人材・金融・通販など、他業種に渡るクリエイティブプランニングを担当する。2017年インフィード広告の動画クリエイティブ制作に特化した関連会社、株式会社ムービーモンスターを設立。
+        .contents#people14
+          .personal-photo
+            img(src="images/people/tominaga.png", alt="富永 晴菜")
+          .personal-intro
+            .name 富永 晴菜
+            .job-name Planner
+            .detail-text 2015年、立命館大学国際関係学部卒。同年、サイバーエージェント入社。インターネット広告事業本部ブランドクリエイティブ部門にて、ナショナルクライアント向けのマスとデジタルを横断した企画・制作に従事。
         #prev_btn: img(src="images/prev.png", alt="prev_btn")
         #next_btn: img(src="images/next.png", alt="next_btn")
         #close_btn: img(src="images/close.png", alt="close_btn")
@@ -316,10 +327,10 @@ block content
         img(src="images/special.png", alt="スペシャルコンテンツ")
       .contents-detail
         a(href="", target="_blank"): img(src="", width="", height="", alt="")
-    
+
   #contact-area
     .one-column
       p.main-copy お問い合わせ先
       p.sub-text お問い合わせは下記窓口宛にご連絡ください。
         br
-        | <a href="https://www.cyberagent.co.jp/form/id=1", target="_blank">人事本部、新卒採用担当</a>
+        | <a href="https://www.cyberagent.co.jp/form/id=1", target="_blank">人事本部　新卒採用担当</a>
