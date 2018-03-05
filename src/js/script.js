@@ -82,10 +82,5 @@ function arrange_person() {
   }
 
   var num = parseInt(full_width / img_width);
-  var test = (full_width - img_width*num) / 2 + 'px';
-  document.getElementById('person-list').style.marginLeft = test;
-  console.log(full_width);
-  console.log(img_width);
-  console.log(num);
-  console.log(test);
+  document.getElementById('person-list').style.marginLeft = (full_width - img_width*num) / 2 + 'px';
 }
