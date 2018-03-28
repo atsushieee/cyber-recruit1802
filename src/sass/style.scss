@@ -101,14 +101,14 @@ a:hover {
 }
 
 .middle-bottom-margin {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .top-margin {
   padding-top: 115px;
 }
 
-#about-area, #people-area, #special-area {
+#about-area, #people-area, #special-area, #place-area {
   background-color: #000000;
 }
 
@@ -131,6 +131,10 @@ a:hover {
   }
 }
 
+.first-btn {
+	margin-bottom: 10px;
+}
+
 .inner-contents {
   margin: 0 auto;
   max-width: 1080px;
@@ -148,21 +152,27 @@ a:hover {
   background-position: top;
   background-repeat: repeat-y;
 	background-size: 1550px auto;
+	text-align: center;
 }
 
 h1 {
-  padding: 310px 0 20px 75px;
-}
-
-#key-visual a {
-  margin-left: 85px;
+  padding: 450px 0 20px;
+	img {
+		margin: 0 auto;
+		max-width: 815px;
+		width: 86%;
+	}
 }
 
 #key-visual a img {
   height: auto;
-  width: 348px;
+	margin: 0 5px;
+  width: 285px;
 }
 
+.center-btn {
+	margin: 0 auto;
+}
 
 #about-area {
 	color: #ffffff;
@@ -172,12 +182,13 @@ h1 {
   font-size: 32px;
   line-height: 1.5em;
 	margin: 0 auto;
-	width: 550px;
+	width: 86%;
 }
 
 .sub-text {
-  margin: 30px auto 50px;
+  margin: 30px auto 0;
   line-height: 3.58em;
+	width: 86%;
 }
 
 .added-exp {
@@ -240,7 +251,7 @@ h2 {
 		margin-bottom: 80px;
 	}
 	img {
-		max-width: 348px;
+		max-width: 285px;
 		width: 62%;
 	}
 }
@@ -261,6 +272,16 @@ h2 {
 	width: 65%;
 }
 
+#place-area {
+	.main-copy {
+		color: #ffffff;
+		margin-bottom: 80px;
+	}
+	img {
+		max-width: 285px;
+		width: 62%;
+	}
+}
 
 #other-area {
 	font-weight: bold;
@@ -283,7 +304,7 @@ h2 {
 
 .two-column {
   float: left;
-  margin-top: 70px;
+  //margin-top: 115px;
 }
 
 
@@ -521,13 +542,13 @@ footer {
   }
 
   h1 {
-    padding: 280px 0 30px;
+    padding: 74% 0 35px;
   }
 
   h1 img {
     height: auto;
     margin: auto;
-    width: 86%
+    width: 80%;
   }
 
   .center-btn {
@@ -539,7 +560,10 @@ footer {
   }
 
   #key-visual a img {
+		display: block;
     height: auto;
+		margin: 0 auto;
+		max-width: 285px;
     width: 62%;
   }
 
@@ -559,7 +583,7 @@ footer {
   }
 
   .sub-text {
-    margin: 20px auto 35px;
+    margin: 20px auto 0px;
 		max-width: 86%;
     line-height: 3.58em;
   }
@@ -604,6 +628,14 @@ footer {
 		min-width: 0;
 	}
 
+	#place-area {
+		.main-copy {
+			font-weight: bold;
+			margin-bottom: 40px;
+			max-width: 86%;
+		}
+	}
+
 
   #other-area {
     .contents-detail {
@@ -632,6 +664,10 @@ footer {
       margin-bottom: 35px;
     }
   }
+
+	.first-column {
+		margin-bottom: 60px;
+	}
 
   #people-area .contents-detail {
     font-size: 12px;

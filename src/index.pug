@@ -10,17 +10,19 @@ block content
   #key-visual.middle-bottom-margin
     .wrapper
       h1
-        img.pc(src="images/key_text_pc.png", width="410px", height="219px", alt="キーコピー")
-        img.sp(src="images/key_text_sp.png", width="578px", height="271px", alt="キーコピー")
+        //img.pc(src="images/key_text_pc.png", width="410px", height="219px", alt="キーコピー")
+        img(src="images/key_text_pc.png", alt="キーコピー")
       .center-btn
         a(href="https://mypage2019.cyberagent.co.jp/student/mypage", target='_blannk')
           img(src="images/entry.png",alt="エントリーボタン")
+        a(href="https://www.cyberagent.co.jp/careers/students/event/", target='_blannk')
+          img(src="images/place_link.png",alt="開催地・日程などの詳細はこちら")
 
   #about-area.bottom-margin.top-margin
     .one-column
       h2.white-title 概要
       .contents-detail
-        p.main-copy 72時間集中選考。
+        p.main-copy 全国5都市・72時間集中選考。
         p.sub-text サイバーエージェントの広告部門でクリエイターとして
           br
           | 活躍する社員が、自ら各エリアにおもむき選考を行う
@@ -36,56 +38,66 @@ block content
           | 2019年新卒・広告クリエイター採用、
           br
           | 若干名募集します。
-        p.added-exp 選考は以下の2つを実施する予定です。
-        ul
-          li.rounded-rectangle
-            span.item-text ワーク
-              br.br-sp
-              | ショップ
-              .comments お題などについて
-                br
-                | は当日発表します
-          li.rounded-rectangle
-            span.item-text 個人面談
+        //-
+          p.added-exp 選考は以下の2つを実施する予定です。
+
+          ul
+            li.rounded-rectangle
+              span.item-text ワーク
+                br.br-sp
+                | ショップ
+                .comments お題などについて
+                  br
+                  | は当日発表します
+            li.rounded-rectangle
+              span.item-text 個人面談
 
   #second-visual-area
     #entry-area.top-margin.middle-bottom-margin
       .one-column
         h2 エントリー方法
         .contents-detail
-          p.main-copy 下記ボタンよりマイページに遷移していただき、「広告クリエイター採用」のイベントにエントリーください。
+          p.main-copy 下記ボタンよりマイページに遷移していただき、
             br
-            | 選考会当日までに、簡単な課題を作成していただき、初日に持参いただきたいと思っています。
-        .center-btn
+            | 「広告クリエイター・プランナー採用」のイベントにエントリーください。
+        .center-btn.first-btn
           a(href="https://mypage2019.cyberagent.co.jp/student/mypage", target='_blannk')
             img(src="images/entry.png",alt="エントリーボタン")
-
-    #flow-area.middle-bottom-margin
-      .one-column
-        h2 選考フロー
-        .wrapper
-          .contents-detail
-            img.pc(src="images/flow_steps_pc.png", alt="選考フロー")
-            img.sp(src="images/flow_steps_sp.png", alt="選考フロー")
-
-    #other-area.bottom-margin
-      .wrapper
+        .center-btn
+          a(href="https://www.cyberagent.co.jp/careers/students/event/", target='_blannk')
+            img(src="images/place_link.png",alt="開催地・日程などの詳細はこちら")
+    
+    //-
+      #flow-area.middle-bottom-margin
         .one-column
-          h2 開催地
-          .contents-detail
-            //img(src="images/place.png", alt="実施会場")
-            p.main-copy 【京都】2018年3月09日~3月11日
-            p.sub-text 他エリアも、随時追加予定です。
-
+          h2 選考フロー
+          .wrapper
+            .contents-detail
+              img.pc(src="images/flow_steps_pc.png", alt="選考フロー")
+              img.sp(src="images/flow_steps_sp.png", alt="選考フロー")
+              
+    #place-area.bottom-margin.top-margin
+      .one-column
+        h2.white-title 開催地
+        .contents-detail
+          //- img(src="images/place.png", alt="実施会場")
+          p.main-copy 東京・大阪・京都・金沢・福岡
+          //- p.sub-text 他エリアも、随時追加予定です。
+        .center-btn
+          a(href="https://www.cyberagent.co.jp/careers/students/event/", target='_blannk')
+            img(src="images/place_link.png",alt="開催地・日程などの詳細はこちら")
+            
+    #other-area.bottom-margin.top-margin
+      .wrapper
         .inner-contents
-          .two-column
+          .two-column.first-column
             h2 応募資格
             .contents-text
-              p.target-copy 2019年4月
+              p.target-copy 2019年・2020年4月
                 br
-                | 入社可能な学生
+                | 入社可能な方
                 br.br-sp
-                | （既卒可）
+                | (既卒可/学部学科不問)
               p.sub-text ※選考にて見送りとなった方からの
                 br
                 | 再応募は不可になります。
@@ -321,7 +333,7 @@ block content
         #next_btn: img(src="images/next.png", alt="next_btn")
         #close_btn: img(src="images/close.png", alt="close_btn")
 
-  // -
+  //-
     #special-area
       h2
         img(src="images/special.png", alt="スペシャルコンテンツ")
